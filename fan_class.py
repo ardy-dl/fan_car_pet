@@ -11,8 +11,11 @@ class Fan:
         # on (df: false)
         self.__is_on = False
 
+    def show(self):
+        print(self.__color, self.__speed, self.__radius, self.__is_on)
+
 Hanabishi = Fan()
-print(Hanabishi)
+Hanabishi.show()
 
     # integer speed
     # boolean on or off (df: false)
