@@ -33,9 +33,18 @@ class Fan:
             print("Fan's speed is now FAST")
         else:
             raise ValueError("Invalid Fan speed. Please choose between 1, 2, or 3.")
-        
-    
     # boolean on or off (df: false)
+    def status(self):
+        status = print("Fan is ON" if self.__is_on else "Fan is OFF")
+        print(status)
+
+    def turn_on(self):
+        self.__is_on = True
+        print("The Fan is turned ON.")
+
+    def turn_off(self):
+        self.__is_on = False
+        print("The Fan is turned OFF.")
     # float radius
     # string color
     # get speed
@@ -48,6 +57,9 @@ class Fan:
 Hanabishi = Fan()
 Hanabishi.get_speed()
 Hanabishi.set_speed(3)
+Hanabishi.status()
+Hanabishi.turn_on()
+Hanabishi.turn_off()
 
 # test programs on a diff file
 # fan_1 = max speed, radius 10, yellow, on 
