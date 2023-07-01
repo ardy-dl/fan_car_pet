@@ -36,7 +36,6 @@ class Fan:
     # boolean on or off (df: false)
     def status(self):
         status = print("Fan is ON" if self.__is_on else "Fan is OFF")
-        print(status)
 
     def turn_on(self):
         self.__is_on = True
