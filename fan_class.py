@@ -1,9 +1,18 @@
 # create class named fan
+class Fan:
     # initialization (all private)
+    def __init__(self, speed="slow", radius=5, color="blue"):
         # speed (df: slow)
+        self.__speed = speed
         # radius (df: 5)
+        self.__radius = radius
         # color (df: blue)
+        self.__color = color
         # on (df: false)
+        self.__is_on = False
+
+Hanabishi = Fan()
+print(Hanabishi)
 
     # integer speed
     # boolean on or off (df: false)
