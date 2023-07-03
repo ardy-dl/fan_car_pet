@@ -51,8 +51,17 @@ class Fan:
     def set_radius(self, radius):
         self.__radius = radius
         print("Fan's radius is now set to", radius)
-        
     # string color
+    def get_color(self):
+        print("Fan's Color:", self.__color)
+    
+    def set_color(self, color):
+        if isinstance(color, str):
+            self.__color = color
+            print("The Fan's color is now set to", color)
+        else:
+            raise ValueError("Invalid fan color. Please input a string.")
+
 
     # get speed
     # set speed
@@ -70,6 +79,10 @@ Hanabishi.turn_off()
 Hanabishi.get_radius()
 Hanabishi.set_radius(6.7)
 Hanabishi.get_radius()
+Hanabishi.get_color()
+Hanabishi.set_color(red)
+Hanabishi.get_color()
+
 
 
 # test programs on a diff file
