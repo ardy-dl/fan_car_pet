@@ -3,7 +3,7 @@ from pet_class import Pet
 import tkinter as tk
 
 # if the user has pet greater than 1 
-num_pets = int(input("Enter the number of pets you want to add: "))
+num_pets = int(input("Enter the number of pet/s you want to add: "))
 pets = []
 
 for i in range(num_pets):
@@ -26,7 +26,7 @@ for i in range(num_pets):
 root = tk.Tk()
 root.title("My Pets")
 root.config(bd=10)
-text = tk.Text(root, width = 40, height =40)
+text = tk.Text(root, width = 40, height =40)  
 text.pack() 
 # display
 for i, pet in enumerate(pets):

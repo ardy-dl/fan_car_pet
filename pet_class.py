@@ -12,7 +12,7 @@ class Pet:
         self.__age = age
     # methods
     def show(self, text_widget):
-        text_widget.insert(tk.END, f"Name: {self.__name} | Animal Type: {self.__animal_type} | Age: {self.__age}")
+        text_widget.insert(tk.END, f"Name: {self.__name} | Animal Type: {self.__animal_type} | Age: {self.__age}\n")
     # get name
     def get_name(self, text_widget):
         text_widget.insert(tk.END, f"Name: {self.__name}\n")
