@@ -24,6 +24,6 @@ for i in range(num_pets):
 print("Pet Details:")
 for i, pet in enumerate(pets):
     print(f"Pet {i+1}:")
-    print("Name:", pet.get_name())
-    print("Animal Type:", pet.get_animal_type())
-    print("Age:", pet.get_age())
+    pet.get_name()
+    pet.get_animal_type()
+    pet.get_age()
