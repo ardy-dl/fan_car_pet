@@ -5,6 +5,7 @@ car_1 = Car("2021 Mazda3 Turbo", "Mazda", 130)
 for i in range(5):
     car_1.accelerate()
     car_1.get_speed()
+for i in range(5):    
     car_1.brake()
     car_1.get_speed()
 
