@@ -28,11 +28,11 @@ class Fan:
     
     def set_speed(self, speed):
         if speed == 1:
-            print("Fan's speed is now SLOW")
+            print(self.__name, "'s speed is now SLOW")
         elif speed == 2:
-            print("Fan's speed is now MEDIUM")
+            print(self.__name, "'s speed is now MEDIUM")
         elif speed == 3:
-            print("Fan's speed is now FAST")
+            print(self.__name, "'sspeed is now FAST")
         else:
             raise ValueError("Invalid Fan speed. Please choose between 1, 2, or 3.")
     # boolean on or off (df: false)
@@ -48,22 +48,22 @@ class Fan:
         print("The Fan is turned OFF.")
     # float radius
     def get_radius(self):
-        print("Fan's Radius:",self.__radius)
+        print(self.__name, "'s Radius:",self.__radius)
 
     def set_radius(self, radius):
         if isinstance(radius, float):
             self.__radius = radius
-            print("Fan's radius is now set to", radius)
+            print(self.__name, "'s radius is now set to", radius)
         else:
             raise ValueError("Invalid radius. Please input a float.")
     # string color
     def get_color(self):
-        print("Fan's Color:", self.__color)
+        print(self.__name, "'s Color:", self.__color)
     
     def set_color(self, color):
         if isinstance(color, str):
             self.__color = color
-            print("The Fan's color is now set to", color)
+            print(self.__name, "'s color is now set to", color)
         else:
             raise ValueError("Invalid fan color. Please input a string.")
 
