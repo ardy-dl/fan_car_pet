@@ -15,13 +15,13 @@ class Pet:
         text_widget.insert(tk.END, f"Name: {self.__name} | Animal Type: {self.__animal_type} | Age: {self.__age}")
     # get name
     def get_name(self, text_widget):
-        text_widget.insert(tk.END, f"The name of the Pet is {self.__name}")
+        text_widget.insert(tk.END, f"Name: {self.__name}\n")
     # get animal type
-    def get_animal_type(self):
-        print("The animal type is", self.__animal_type)
+    def get_animal_type(self, text_widget):
+        text_widget.insert(tk.END, f"Animal Type: {self.__animal_type}\n")
     # get age 
-    def get_age(self):
-        print("The age of the pet is", self.__age)
+    def get_age(self, text_widget):
+        text_widget.insert(tk.END, f"Age: {self.__age}\n")
     # set name
     def set_name(self, name):
         self.__name = name
