@@ -1,3 +1,5 @@
+import tkinter as tk
+
 # pet class
 class Pet:
     # initialize
@@ -9,11 +11,11 @@ class Pet:
         # age
         self.__age = age
     # methods
-    def show(self):
-        print(self.__name, self.__animal_type, self.__age)
+    def show(self, text_widget):
+        text_widget.insert(tk.END, f"Name: {self.__name} | Animal Type: {self.__animal_type} | Age: {self.__age}")
     # get name
-    def get_name(self):
-        print("The name of the Pet is", self.__name)
+    def get_name(self, text_widget):
+        text_widget.insert(tk.END, f"The name of the Pet is {self.__name}")
     # get animal type
     def get_animal_type(self):
         print("The animal type is", self.__animal_type)

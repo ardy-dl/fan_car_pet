@@ -21,6 +21,7 @@ class Car:
     def brake(self):
         self.__speed -=5
         return self.__speed
+    
     # get_speed() return current speed
     def get_speed(self):
         print(self.__year_model, "'s current speed is", self.__speed)

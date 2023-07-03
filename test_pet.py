@@ -1,5 +1,13 @@
 # import the pet class
 from pet_class import Pet
+import tkinter as tk
+
+root = tk.Tk()
+root.title("My Pets")
+root.config(bd=10)
+text = tk.Text(root, width = 40, height =10)
+text.pack() 
+
 # if the user has pet greater than 1
 num_pets = int(input("Enter the number of pets you want to add: "))
 pets = []
@@ -21,9 +29,11 @@ for i in range(num_pets):
     pets.append(pet)
 
 # display
-print("Pet Details:")
+text.insert(tk.END, "Pet Details:\n")
 for i, pet in enumerate(pets):
-    print(f"Pet {i+1}:")
-    pet.get_name()
+    text.insert(tk.END, f"Pet {i+1}:\n")
+    pet.get_name(text)
     pet.get_animal_type()
     pet.get_age()
+
+root.mainloop()
