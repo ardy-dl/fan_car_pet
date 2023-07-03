@@ -65,21 +65,3 @@ class Fan:
         else:
             raise ValueError("Invalid fan color. Please input a string.")
 
-
-Hanabishi = Fan()
-Hanabishi.get_speed()
-Hanabishi.set_speed(3)
-Hanabishi.status()
-Hanabishi.turn_on()
-Hanabishi.turn_off()
-Hanabishi.get_radius()
-Hanabishi.set_radius(6.7)
-Hanabishi.get_radius()
-Hanabishi.get_color()
-Hanabishi.set_color(red)
-Hanabishi.get_color()
-
-# test programs on a diff file
-# fan_1 = max speed, radius 10, yellow, on 
-# fan_2 = medium speed, radius 5, color blue, off
-# display properties 
