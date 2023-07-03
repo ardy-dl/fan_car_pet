@@ -35,8 +35,8 @@ class Fan:
             raise ValueError("Invalid Fan speed. Please choose between 1, 2, or 3.")
     # boolean on or off (df: false)
     def status(self):
-        status = print("Fan is ON" if self.__is_on else "Fan is OFF")
-
+        status = "Fan is ON." if self.__is_on == True else "Fan is OFF."
+        print(status)
     def turn_on(self):
         self.__is_on = True
         print("The Fan is turned ON.")
@@ -45,7 +45,15 @@ class Fan:
         self.__is_on = False
         print("The Fan is turned OFF.")
     # float radius
+    def get_radius(self):
+        print("Fan's Radius:",self.__radius)
+
+    def set_radius(self, radius):
+        self.__radius = radius
+        print("Fan's radius is now set to", radius)
+        
     # string color
+
     # get speed
     # set speed
     # get radius
@@ -59,6 +67,10 @@ Hanabishi.set_speed(3)
 Hanabishi.status()
 Hanabishi.turn_on()
 Hanabishi.turn_off()
+Hanabishi.get_radius()
+Hanabishi.set_radius(6.7)
+Hanabishi.get_radius()
+
 
 # test programs on a diff file
 # fan_1 = max speed, radius 10, yellow, on 
