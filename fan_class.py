@@ -1,7 +1,8 @@
 # create class named fan
 class Fan:
     # initialization (all private)
-    def __init__(self, speed = 1, radius = 5, color = "blue"):
+    def __init__(self, name = "Default", speed = 1, radius = 5, color = "blue"):
+        self.__name = name
         # speed (df: slow)
         self.__speed = speed
         if speed == 1:
@@ -18,7 +19,8 @@ class Fan:
         self.__is_on = False
 
     def show(self):
-        print(self.__speed, self.__radius, self.__color, self.__is_on)
+        status = "Fan is ON." if self.__is_on == True else "Fan is OFF."
+        print(self.__name, "-", self.__speed, "| radius:", self.__radius, "| color:", self.__color, "|", status)
 
     # integer speed
     def get_speed(self):
