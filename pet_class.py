@@ -21,11 +21,20 @@ class Pet:
     def get_age(self):
         print("The age of the pet is", self.__age)
     # set name
+    def set_name(self, name):
+        self.__name = name
     # set animal type
+    def set_animal_type(self, animal_type):
+        self.__animal_type = animal_type
     # set age
+    def set_age(self, age):
+        self.__age = age
     
 pet_1 = Pet("callie", "dog", 2)
 pet_1.show()
+pet_1.set_name("Pola")
+pet_1.set_animal_type("cat")
+pet_1.set_age(3)
 pet_1.get_name()
 pet_1.get_animal_type()
 pet_1.get_age()
