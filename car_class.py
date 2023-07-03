@@ -15,16 +15,15 @@ class Car:
     # accelerate() Add 5 to speed each time it is called
     def accelerate(self):
         self.__speed +=5
-        print(self.__speed)
+        return self.__speed
         
     # brake() subtract 5 to speed
     def brake(self):
         self.__speed -=5
-        print(self.__speed)
-
+        return self.__speed
     # get_speed() return current speed
     def get_speed(self):
-        print(self.__speed)
+        print(self.__year_model, "'s current speed is", self.__speed)
 
 # Testing in a diff file
 car_1 = Car("2021 Mazda3 Turbo", "Mazda", 130)
